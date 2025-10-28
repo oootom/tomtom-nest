@@ -1,4 +1,4 @@
-// !!Abandoned
+/** Abandoned */
 
 export class iReflect {
   static metadataContainer = new Map<string, Map<any, any>>();
@@ -11,7 +11,11 @@ export class iReflect {
     return targetMetadata.has(target);
   }
 
-  static defineMetadata(metadataKey: string, metadataValue: any, target: any): void {
+  static defineMetadata(
+    metadataKey: string,
+    metadataValue: any,
+    target: any
+  ): void {
     let targetMetadata = iReflect.metadataContainer.get(metadataKey);
     if (!targetMetadata) {
       targetMetadata = new Map();

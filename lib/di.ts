@@ -1,3 +1,5 @@
+console.log("di.ts run");
+
 export class DIContainer {
   private static providers = new Map<any, any>();
 
